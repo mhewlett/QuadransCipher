@@ -16,13 +16,13 @@ while loop.lower() == 'y':
     # Construct program variables and prevent duplicates
     rand1 = random.randint(0, 9)
     rand2 = random.randint(0, 9)
-    if rand2 == rand1:
+    while rand2 == rand1:
         rand2 = random.randint(0, 9)
     rand3 = random.randint(0, 9)
-    if rand3 == rand2 or rand3 == rand1:
+    while rand3 == rand2 or rand3 == rand1:
         rand3 = random.randint(0, 9)
     rand4 = random.randint(0, 9)
-    if rand4 == rand3 or rand4 == rand2 or rand4 == rand1:
+    while rand4 == rand3 or rand4 == rand2 or rand4 == rand1:
         rand4 = random.randint(0, 9)
 
     # Concatenate the variables into a single answer
